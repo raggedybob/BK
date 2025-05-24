@@ -1,0 +1,76 @@
+# Unity Git Starter Kit
+
+# .gitignore (Unity-specific)
+# This tells Git what NOT to track to avoid clutter & problems
+
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Mm]emoryCaptures/
+
+# Asset meta data should be tracked
+!/[Aa]ssets/**/*.meta
+!/[Pp]rojectSettings/**/*.meta
+
+# Auto-generated VS/JetBrains project files
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+*.pidb.meta
+
+# IDE specific folders
+.vscode/
+.idea/
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Optional: Unity Collab if you're not using it
+.collabignore
+
+---
+
+# Suggested Project Structure
+# (Create this in Unity and track it in Git)
+
+MyUnityGame/
+├── Assets/
+│   ├── Art/
+│   ├── Audio/
+│   ├── Prefabs/
+│   ├── Scenes/
+│   ├── Scripts/
+│   └── UI/
+├── ProjectSettings/
+├── Packages/
+└── .gitignore
+
+---
+
+# How to Collaborate (Simplified)
+
+1. One person creates the repo and pushes the full Unity project (minus ignored files).
+2. Others clone the repo.
+3. Both of yall use Unity Hub to open the project.
+4. When you make changes:
+   - `git pull` to get your friend's work
+   - Make your edits
+   - `git add .`, `git commit -m "what you changed"`, then `git push`
+5. Never edit the same scene at the same time. Use prefabs or split the level into multiple scenes.
+
+# You're ready to cook.
